@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { BlurText } from "@/components/BlurText";
-import heroImg from "@/assets/hero-wellness.jpg";
+import heroImg from "@/assets/hero-bg-2.jpg";
 
 const WHATSAPP = "https://wa.me/919035605046?text=Hi%20Sujatha%2C%20I%27d%20like%20to%20know%20more%20about%20your%20wellness%20programs.";
 
@@ -15,10 +15,10 @@ export const Hero = () => {
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-      <div className="absolute inset-0 bg-black/25" />
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 pt-28 pb-20 text-center">
+      <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 pt-28 pb-20 text-center" style={{ textShadow: '0 2px 16px rgba(0,0,0,0.35)' }}>
         <motion.div
           initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}

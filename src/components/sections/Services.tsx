@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import weightLoss from "@/assets/service-weight-loss.jpg";
-import weightGain from "@/assets/service-weight-gain.jpg";
-import skin from "@/assets/service-skin.jpg";
+import weightLoss from "@/assets/weight-loss.jpg";
+import weightGain from "@/assets/weight-gain.jpg";
+import skin from "@/assets/skin-cleansing.jpg";
 
 const WHATSAPP = (msg: string) => `https://wa.me/919035605046?text=${encodeURIComponent(msg)}`;
 
@@ -57,7 +57,7 @@ export const Services = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group relative overflow-hidden rounded-3xl bg-card border border-border/80 shadow-[var(--shadow-soft)] hover:-translate-y-1 transition-all"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-square overflow-hidden">
                 <img
                   src={s.img}
                   alt={s.title}

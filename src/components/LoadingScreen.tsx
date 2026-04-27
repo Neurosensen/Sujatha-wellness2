@@ -62,7 +62,7 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
     >
       {/* Background gradient instead of broken video */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0a1a0f] via-[#0f1f14] to-[#0a0a0a]" />
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Top-left label */}
@@ -122,8 +122,8 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
           <motion.div
             className="h-full origin-left"
             style={{
-              background: "linear-gradient(90deg, #89AACC 0%, #4E85BF 100%)",
-              boxShadow: "0 0 8px rgba(137, 170, 204, 0.35)",
+              background: "linear-gradient(90deg, #6B9B7D 0%, #3D7A54 100%)",
+              boxShadow: "0 0 8px rgba(61, 122, 84, 0.45)",
             }}
             initial={{ scaleX: 0 }}
             animate={{ scaleX: progress / 100 }}
